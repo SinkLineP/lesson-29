@@ -4,7 +4,7 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'sinatra/activerecord'
 
-ser :datebase, "sqlite3:barber.db"
+set :datebase, "sqlite3:barber.db"
 
 class Client < ActiveRecord::Base
 end
