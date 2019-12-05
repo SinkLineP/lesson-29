@@ -1,16 +1,17 @@
-class CreateBarbers < ActiveRecord::Migration[5.2]
+class CreateBarbers < ActiveRecord::Migration[5.2] # тут должны быть ковычки
 
 	def change    
 
-  	create_table :barber do |t|
+  	create_table :barbers do |t|
   		t.string :name
 
   		t.timestamps
   	end
 
-	 	# Barber.create :name => 'Jessie Pickman'
-	 	# Barber.create :name => 'Walter White'
-	 	# Barber.create :name => 'Gus Fring'
+		Barbers.create :name => 'Jessie Pickman'
+	 	Barbers.create :name => 'Walter White'
+	 	Barbers.create :name => 'Gus Fring'
+
 
   end
 end
