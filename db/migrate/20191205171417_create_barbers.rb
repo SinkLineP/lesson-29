@@ -1,4 +1,4 @@
-class CreateBarbers < ActiveRecord::Migration[5.2] # тут должны быть ковычки
+class CreateBarbers < ActiveRecord::Migration[5.2] # тут должно быть в ковычках [5.2]
 
 	def change    
 
@@ -8,7 +8,7 @@ class CreateBarbers < ActiveRecord::Migration[5.2] # тут должны быт�
   		t.timestamps
   	end
 
-		Barbers.create :name => 'Jessie Pickman'
+		Barbers.create :name => 'Jessie Pickman' # создает в базе данных
 	 	Barbers.create :name => 'Walter White'
 	 	Barbers.create :name => 'Gus Fring'
 
