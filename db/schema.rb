@@ -18,10 +18,10 @@ ActiveRecord::Schema.define(version: 2019_12_05_171417) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "client", force: :cascade do |t|
-    t.string "name"
+  create_table "clients", force: :cascade do |t|
+    t.string "username"
     t.string "phone"
-    t.date "datestamp"
+    t.string "datetime"
     t.string "barber"
     t.string "color"
     t.datetime "created_at", null: false
