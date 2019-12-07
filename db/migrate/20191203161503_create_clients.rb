@@ -10,8 +10,5 @@ class CreateClients < ActiveRecord::Migration[5.2]
 
   		t.timestamps
   	end
-
-      Clients.create :username => '#{@username}'    
-
   end
 end
